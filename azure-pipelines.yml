@@ -1,4 +1,9 @@
 # ASP.NET Core (.NET Framework)
+- task: AzureKeyVault@1
+  inputs:
+    azureSubscription: 'arm_managed'
+    KeyVaultName: 
+    SecretsFilter: '*'
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
